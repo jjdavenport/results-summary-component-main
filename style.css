@@ -103,8 +103,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 8%;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
 .right h1 {
