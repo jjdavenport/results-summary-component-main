@@ -1,258 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    margin: 0;
-    padding: 0; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  height: 100vh;
 }
 
 * {
-    font-family: "Hanken Grotesk", sans-serif;
-    margin: 0;
-    padding: 0; 
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --left-background-color-one: hsl(252, 100%, 67%);
-    --left-background-color-two: hsl(241, 81%, 54%);
-    --gradient: linear-gradient(to bottom, var(--left-background-color-one), var(--left-background-color-two));
-    --circle-background-color-one: hsla(256, 72%, 46%, 1);
-    --circle-background-color-two: hsla(241, 72%, 46%, 0);
-    --circle-gradient: linear-gradient(to bottom, var(--circle-background-color-one), var(--circle-background-color-two));
-    --main-background-color: hsl(241, 100%, 89%); 
-    --a-background: hsl(224, 30%, 27%); 
-    --default-text-color: hsl(0, 0%, 100%); 
-    --react-background-color: hsla(0, 100%, 67%, 0.1);
-    --memory-background-color: hsl(39, 100%, 56%, 0.1);
-    --verbal-background-color: hsl(166, 100%, 37%, 0.1) ;
-    --visual-background-color: hsl(234, 85%, 45%, 0.1); 
-    --react-font-color: hsla(0, 100%, 67%);
-    --memory-font-color: hsl(39, 100%, 56%);
-    --verbal-font-color: hsl(166, 100%, 37%);
-    --visual-font-color: hsl(234, 85%, 45%); 
-}
-
-.container {
-    display: grid;
-    grid-template-rows: 10fr auto;
-    height: 100vh;
-    width: 100vw;
-    place-items: center;
+  --left-background-color-one: hsl(252, 100%, 67%);
+  --left-background-color-two: hsl(241, 81%, 54%);
+  --gradient: linear-gradient(
+    to bottom,
+    var(--left-background-color-one),
+    var(--left-background-color-two)
+  );
+  --circle-background-color-one: hsla(256, 72%, 46%, 1);
+  --circle-background-color-two: hsla(241, 72%, 46%, 0);
+  --circle-gradient: linear-gradient(
+    to bottom,
+    var(--circle-background-color-one),
+    var(--circle-background-color-two)
+  );
+  --main-background-color: hsl(241, 100%, 89%);
+  --a-background: hsl(224, 30%, 27%);
+  --default-text-color: hsl(0, 0%, 100%);
+  --react-background-color: hsla(0, 100%, 67%, 0.1);
+  --memory-background-color: hsl(39, 100%, 56%, 0.1);
+  --verbal-background-color: hsl(166, 100%, 37%, 0.1);
+  --visual-background-color: hsl(234, 85%, 45%, 0.1);
+  --react-font-color: hsla(0, 100%, 67%);
+  --memory-font-color: hsl(39, 100%, 56%);
+  --verbal-font-color: hsl(166, 100%, 37%);
+  --visual-font-color: hsl(234, 85%, 45%);
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50vw;
-    height: 45vh;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0px 0px 30px var(--main-background-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 31.25rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px var(--main-background-color);
+  width: 40rem;
 }
 
-.left{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    background: var(--gradient); 
-    border-radius: 24px;
-    color: var(--default-text-color);
-    padding: 8%;
+.left {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gradient);
+  border-radius: 1.5rem;
+  color: var(--default-text-color);
+  padding: 8%;
 }
 
-.left h1{
-    font-size: 22px;
-    opacity: 70%;
-    font-weight: 500;
+.left h2 {
+  font-size: 22px;
+  opacity: 70%;
+  font-weight: 500;
 }
 
-.left h2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0; 
-    font-size: 60px;
+.left h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 3.75rem;
 }
 
-.left h2 span{
-    font-size: 16px;
-    opacity: 50%;
+.left h1 span {
+  font-size: 1rem;
+  opacity: 50%;
 }
 
-.left p{
-    font-size: 18px;
-    text-align: center;
-    width: 16vw;
-    opacity: 50%;
+.left p {
+  font-size: 1.125rem;
+  text-align: center;
+  width: 25ch;
+  opacity: 50%;
 }
 
-.left h3{
-    font-size: 28px;
-    font-weight: 500;
+.left h3 {
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8%;
 }
 
-.right h1{
-    text-align: start;
-    margin: 0;
-    font-size: 22px;
+.right h1 {
+  margin: 0;
+  font-size: 1.375rem;
 }
 
 .h1-div {
-    display: flex;
-    width: 20vw;
-    justify-items: flex-start;
+  display: flex;
 }
 
 .result-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    background: var(--circle-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 12.5rem;
+  width: 12.5rem;
+  background: var(--circle-gradient);
 }
 
 .catagories {
-    display: grid;
-    align-content: center;
-    grid-template-columns: 1fr 2fr;
-    height: 3vh;
-    width: 18vw;
-    padding: 4%;
-    border-radius: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
 }
 
 .left-col {
-    grid-row: 1 / 1;
-    display: flex;
-    align-items: center;
+  grid-row: 1 / 1;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 1rem;
 }
 
-.left-col img{
-    height: 2vh;
-}
-
-.left-col p{
-    font-size: 18px;
-    margin-left: 4%;
-    font-weight: 700;
+.left-col p {
+  font-size: 1.125rem;
+  margin-left: 4%;
+  font-weight: 700;
 }
 
 .right-col {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
 
-.right-col p{
-    font-weight: 800;
-    color: var(--a-background);
+.right-col p {
+  font-weight: 800;
+  color: var(--a-background);
 }
 
-.right-col span{
-    font-weight: 700;
-    opacity: 50%;
+.right-col span {
+  font-weight: 700;
+  opacity: 50%;
 }
 
 #react {
-    background-color: var(--react-background-color);
-    color: var(--react-font-color);
+  background-color: var(--react-background-color);
+  color: var(--react-font-color);
 }
 
-#memory{
-    background-color: var(--memory-background-color);
-    color: var(--memory-font-color);
+#memory {
+  background-color: var(--memory-background-color);
+  color: var(--memory-font-color);
 }
 
-#verbal{
-    background-color: var(--verbal-background-color);
-    color: var(--verbal-font-color);
+#verbal {
+  background-color: var(--verbal-background-color);
+  color: var(--verbal-font-color);
 }
 
-#visual{
-    background-color: var(--visual-background-color);
-    color: var(--visual-font-color);
+#visual {
+  background-color: var(--visual-background-color);
+  color: var(--visual-font-color);
 }
 
-main a{
+main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--a-background);
+  border-radius: 1.875rem;
+  height: 3rem;
+  width: 16rem;
+  color: var(--default-text-color);
+}
+
+main a:hover {
+  background: var(--gradient);
+  cursor: pointer;
+}
+
+@media screen and (width < 40rem) {
+  main {
+    width: 100vw;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: var(--a-background);
-    border-radius: 30px;
-    height: 5vh;
-    width: 20vw;
-    color: var(--default-text-color);
-}
-
-main a:hover{
-    background: var(--gradient);
-    cursor: pointer;
-}
-
-@media screen and (max-width: 375px) {
-    main{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        height: 98vh;
-        width: 100vw;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    .right {
-        height: 48vh;
-        grid-row: 2 / 2;
-        grid-column: 1 / 3;
-        padding: 0; 
-        justify-content: space-around;
-        margin: 0;
-    }
-    .left {
-        height: 45vh;
-        grid-row: 1 / 1;
-        grid-column: 1 / 3;
-        padding: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        justify-content: space-around;
-        padding: 4%;
-    }
-    .result-div {
-        height: 130px;
-        width: 130px;
-    }
-    .left p{
-        width: 80vw;
-        font-size: 0.9rem;
-    }
-    .right a{
-        width: 90vw;
-        height: 8vh;
-        border-radius: 30px;
-    }
-    .catagories {
-        height: 4vw;
-        width: 75vw;
-    }
-    .h1-div {
-        width: 78vw;
-    }
-    .right h1{
-        font-size: 20px;
-    }
-    .left h1{
-        font-size: 0.8rem;
-    }
+    flex-direction: column;
+  }
+  .right {
+    height: 100%;
+    border-radius: 0;
+  }
+  .left {
+    height: 100%;
+    border-radius: 0 0 2.5rem 2.5rem;
+  }
+  .right a {
+    height: 4rem;
+    width: 100%;
+  }
+  .result-div {
+    height: 8.125rem;
+    width: 130px;
+  }
+  .left p {
+    width: 80vw;
+    font-size: 0.9rem;
+  }
+  .right h2 {
+    font-size: 1.25rem;
+  }
+  .left h2 {
+    font-size: 0.8rem;
+  }
 }
