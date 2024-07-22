@@ -5,9 +5,11 @@ import iconVisual from "./assets/images/icon-visual.svg";
 
 const summary = () => {
   return (
-    <div className="summary flex-1 text-center p-8 flex flex-col gap-4 justify-between">
+    <div className="flex-1 text-center p-8 flex flex-col gap-4 md:gap-6 justify-between">
       <div className="h1-div">
-        <h2 className="text-start text-darkGrayBlue font-semibold">Summary</h2>
+        <h2 className="text-start text-darkGrayBlue font-bold text-xl">
+          Summary
+        </h2>
       </div>
       <div
         className="flex justify-between bg-reactBackground items-center rounded-md p-2"
@@ -69,7 +71,7 @@ const summary = () => {
           </p>
         </div>
       </div>
-      <button className="bg-darkGrayBlue text-white rounded-full h-10 hover:bg-gradient-light-slate-blue">
+      <button className="bg-darkGrayBlue text-white rounded-full h-12 hover:bg-gradient-light-slate-blue font-semibold">
         Continue
       </button>
     </div>
