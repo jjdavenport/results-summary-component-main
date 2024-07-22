@@ -3,11 +3,11 @@ import iconMemory from "./assets/images/icon-memory.svg";
 import iconVerbal from "./assets/images/icon-verbal.svg";
 import iconVisual from "./assets/images/icon-visual.svg";
 
-const summary = () => {
+const Summary = () => {
   return (
     <div className="flex-1 text-center p-8 flex flex-col gap-4 md:gap-6 justify-between">
-      <div className="h1-div">
-        <h2 className="text-start text-darkGrayBlue font-bold text-xl">
+      <div>
+        <h2 className="text-start text-darkGrayBlue font-bold text-xl font-hanken">
           Summary
         </h2>
       </div>
@@ -16,10 +16,10 @@ const summary = () => {
         id="react"
       >
         <div className="flex gap-2">
-          <img src={iconReaction} alt="" />
+          <img src={iconReaction} alt="Reaction icon" />
           <p className="text-lightRed font-semibold">Reaction</p>
         </div>
-        <div className="right-col">
+        <div>
           <p className="font-bold text-darkGrayBlue">
             80
             <span className="opacity-50"> / 100</span>
@@ -31,10 +31,10 @@ const summary = () => {
         id="memory"
       >
         <div className="flex gap-2">
-          <img src={iconMemory} alt="" />
+          <img src={iconMemory} alt="Memory icon" />
           <p className="text-orangeyYellow font-semibold">Memory</p>
         </div>
-        <div className="right-col">
+        <div>
           <p className="font-bold text-darkGrayBlue">
             92
             <span className="opacity-50"> / 100</span>
@@ -46,10 +46,10 @@ const summary = () => {
         id="verbal"
       >
         <div className="flex gap-2">
-          <img src={iconVerbal} alt="" />
+          <img src={iconVerbal} alt="Verbal icon" />
           <p className="text-greenTeal font-semibold">Verbal</p>
         </div>
-        <div className="right-col">
+        <div>
           <p className="font-bold text-darkGrayBlue">
             61
             <span className="opacity-50"> / 100</span>
@@ -61,10 +61,10 @@ const summary = () => {
         id="visual"
       >
         <div className="flex gap-2">
-          <img src={iconVisual} alt="" />
+          <img src={iconVisual} alt="Visual icon" />
           <p className="text-cobaltBlue font-semibold">Visual</p>
         </div>
-        <div className="right-col">
+        <div>
           <p className="font-bold text-darkGrayBlue">
             72
             <span className="opacity-50"> / 100</span>
@@ -78,4 +78,4 @@ const summary = () => {
   );
 };
 
-export default summary;
+export default Summary;

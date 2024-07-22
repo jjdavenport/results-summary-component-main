@@ -1,8 +1,8 @@
 const Results = () => {
   return (
-    <div className="bg-gradient-light-slate-blue text-white font-hanken flex flex-col items-center flex-1 gap-4 md:gap-8 p-6 md:p-8 rounded-b-3xl md:rounded-3xl">
+    <div className="bg-gradient-light-slate-blue text-white font-hanken flex flex-col items-center flex-1 gap-4 md:gap-8 p-6 md:p-8 rounded-b-3xl md:rounded-3xl justify-between">
       <h2 className="opacity-80 text-xl">Your Result</h2>
-      <div className="result-div">
+      <div>
         <h1 className="flex flex-col text-center text-6xl bg-gradient-violet-blue rounded-full h-40 w-40 justify-center items-center font-bold">
           76
           <span className="text-xl opacity-70 font-semibold">of 100</span>
