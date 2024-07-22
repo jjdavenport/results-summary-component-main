@@ -15,6 +15,10 @@ module.exports = {
         paleBlue: "hsl(221, 100%, 96%)",
         lightLavender: "hsl(241, 100%, 89%)",
         darkGrayBlue: "hsl(224, 30%, 27%)",
+        reactBackground: "hsla(0, 100%, 67%, 0.1)",
+        memoryBackground: "hsl(39, 100%, 56%, 0.1)",
+        verbalBackground: "hsl(166, 100%, 37%, 0.1)",
+        visualBackground: "hsl(234, 85%, 45%, 0.1)",
       },
       backgroundImage: {
         "gradient-light-slate-blue":
