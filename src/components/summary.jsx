@@ -5,19 +5,19 @@ import iconVisual from "./assets/images/icon-visual.svg";
 
 const Summary = () => {
   return (
-    <div className="flex-1 text-center p-8 flex flex-col gap-4 md:gap-6 justify-between">
+    <div className="flex flex-1 flex-col justify-between gap-4 p-8 text-center md:gap-6">
       <div>
-        <h2 className="text-start text-darkGrayBlue font-bold text-xl font-hanken">
+        <h2 className="text-start font-hanken text-xl font-bold text-darkGrayBlue">
           Summary
         </h2>
       </div>
       <div
-        className="flex justify-between bg-reactBackground items-center rounded-md p-2"
+        className="flex items-center justify-between rounded-md bg-reactBackground p-2"
         id="react"
       >
         <div className="flex gap-2">
           <img src={iconReaction} alt="Reaction icon" />
-          <p className="text-lightRed font-semibold">Reaction</p>
+          <p className="font-semibold text-lightRed">Reaction</p>
         </div>
         <div>
           <p className="font-bold text-darkGrayBlue">
@@ -27,12 +27,12 @@ const Summary = () => {
         </div>
       </div>
       <div
-        className="flex justify-between bg-memoryBackground items-center rounded-md p-2"
+        className="flex items-center justify-between rounded-md bg-memoryBackground p-2"
         id="memory"
       >
         <div className="flex gap-2">
           <img src={iconMemory} alt="Memory icon" />
-          <p className="text-orangeyYellow font-semibold">Memory</p>
+          <p className="font-semibold text-orangeyYellow">Memory</p>
         </div>
         <div>
           <p className="font-bold text-darkGrayBlue">
@@ -42,12 +42,12 @@ const Summary = () => {
         </div>
       </div>
       <div
-        className="flex justify-between bg-verbalBackground items-center rounded-md p-2"
+        className="flex items-center justify-between rounded-md bg-verbalBackground p-2"
         id="verbal"
       >
         <div className="flex gap-2">
           <img src={iconVerbal} alt="Verbal icon" />
-          <p className="text-greenTeal font-semibold">Verbal</p>
+          <p className="font-semibold text-greenTeal">Verbal</p>
         </div>
         <div>
           <p className="font-bold text-darkGrayBlue">
@@ -57,12 +57,12 @@ const Summary = () => {
         </div>
       </div>
       <div
-        className="flex justify-between bg-visualBackground items-center rounded-md p-2"
+        className="flex items-center justify-between rounded-md bg-visualBackground p-2"
         id="visual"
       >
         <div className="flex gap-2">
           <img src={iconVisual} alt="Visual icon" />
-          <p className="text-cobaltBlue font-semibold">Visual</p>
+          <p className="font-semibold text-cobaltBlue">Visual</p>
         </div>
         <div>
           <p className="font-bold text-darkGrayBlue">
@@ -71,7 +71,7 @@ const Summary = () => {
           </p>
         </div>
       </div>
-      <button className="bg-darkGrayBlue text-white rounded-full h-12 hover:bg-gradient-light-slate-blue font-semibold">
+      <button className="h-12 rounded-full bg-darkGrayBlue font-semibold text-white hover:bg-gradient-light-slate-blue">
         Continue
       </button>
     </div>

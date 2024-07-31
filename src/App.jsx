@@ -4,9 +4,9 @@ import Summary from "./components/summary";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="flex-grow flex md:items-center justify-center">
-        <main className="flex flex-col md:flex-row md:items-stretch md:justify-center md:w-2/4 md:mx-auto md:shadow-md md:rounded-3xl md:shadow-lightLavender md:min-w-[500px]">
+    <div className="flex min-h-screen flex-col">
+      <div className="flex flex-grow justify-center md:items-center">
+        <main className="flex flex-col md:mx-auto md:w-2/4 md:min-w-[500px] md:flex-row md:items-stretch md:justify-center md:rounded-3xl md:shadow-md md:shadow-lightLavender">
           <Results />
           <Summary />
         </main>
