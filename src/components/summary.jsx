@@ -1,7 +1,4 @@
-import iconReaction from "./assets/images/icon-reaction.svg";
-import iconMemory from "./assets/images/icon-memory.svg";
-import iconVerbal from "./assets/images/icon-verbal.svg";
-import iconVisual from "./assets/images/icon-visual.svg";
+import data from "./assets/data.json";
 
 const Summary = () => {
   return (
@@ -11,66 +8,43 @@ const Summary = () => {
           Summary
         </h2>
       </div>
-      <div
-        className="flex items-center justify-between rounded-md bg-reactBackground p-2"
-        id="react"
-      >
-        <div className="flex gap-2">
-          <img src={iconReaction} alt="Reaction icon" />
-          <p className="font-semibold text-lightRed">Reaction</p>
+      {data.map((i) => (
+        <div
+          key={i.category}
+          className={`flex items-center justify-between rounded-md p-2 ${
+            i.category === "Reaction"
+              ? "bg-reactBackground"
+              : i.category === "Memory"
+                ? "bg-memoryBackground"
+                : i.category === "Verbal"
+                  ? "bg-verbalBackground"
+                  : "bg-visualBackground"
+          }`}
+        >
+          <div className="flex gap-2">
+            <img src={i.icon} alt={`${i.category} icon`} />
+            <p
+              className={`font-semibold ${
+                i.category === "Reaction"
+                  ? "text-lightRed"
+                  : i.category === "Memory"
+                    ? "text-orangeyYellow"
+                    : i.category === "Verbal"
+                      ? "text-greenTeal"
+                      : "text-cobaltBlue"
+              }`}
+            >
+              {i.category}
+            </p>
+          </div>
+          <div>
+            <p className="font-bold text-darkGrayBlue">
+              {i.score}
+              <span className="opacity-50"> / 100</span>
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="font-bold text-darkGrayBlue">
-            80
-            <span className="opacity-50"> / 100</span>
-          </p>
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-between rounded-md bg-memoryBackground p-2"
-        id="memory"
-      >
-        <div className="flex gap-2">
-          <img src={iconMemory} alt="Memory icon" />
-          <p className="font-semibold text-orangeyYellow">Memory</p>
-        </div>
-        <div>
-          <p className="font-bold text-darkGrayBlue">
-            92
-            <span className="opacity-50"> / 100</span>
-          </p>
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-between rounded-md bg-verbalBackground p-2"
-        id="verbal"
-      >
-        <div className="flex gap-2">
-          <img src={iconVerbal} alt="Verbal icon" />
-          <p className="font-semibold text-greenTeal">Verbal</p>
-        </div>
-        <div>
-          <p className="font-bold text-darkGrayBlue">
-            61
-            <span className="opacity-50"> / 100</span>
-          </p>
-        </div>
-      </div>
-      <div
-        className="flex items-center justify-between rounded-md bg-visualBackground p-2"
-        id="visual"
-      >
-        <div className="flex gap-2">
-          <img src={iconVisual} alt="Visual icon" />
-          <p className="font-semibold text-cobaltBlue">Visual</p>
-        </div>
-        <div>
-          <p className="font-bold text-darkGrayBlue">
-            72
-            <span className="opacity-50"> / 100</span>
-          </p>
-        </div>
-      </div>
+      ))}
       <button className="h-12 rounded-full bg-darkGrayBlue font-semibold text-white hover:bg-gradient-light-slate-blue">
         Continue
       </button>

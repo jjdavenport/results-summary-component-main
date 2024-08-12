@@ -762,31 +762,6 @@ video {
     width: 50%;
   }
 
-  .md\:min-w-52{
-    min-width: 13rem;
-  }
-
-  .md\:min-w-60{
-    min-width: 15rem;
-  }
-
-  .md\:min-w-72{
-    min-width: 18rem;
-  }
-
-  .md\:min-w-96{
-    min-width: 24rem;
-  }
-
-  .md\:min-w-min{
-    min-width: -moz-min-content;
-    min-width: min-content;
-  }
-
-  .md\:min-w-\[400px\]{
-    min-width: 400px;
-  }
-
   .md\:min-w-\[500px\]{
     min-width: 500px;
   }
